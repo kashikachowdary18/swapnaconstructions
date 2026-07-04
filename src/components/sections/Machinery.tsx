@@ -39,28 +39,28 @@ const iconMap: Record<string, LucideIcon> = {
 };
 
 const machineryImages: Record<string, string> = {
-  Excavators:
+  "HYDRAULIC EXCAVATORS":
     "/images/machinery/excavators.jpg",
 
-  "JCB Equipment":
+  "BACKHOE LOADERS":
     "/images/machinery/jcb-equipment.jpg",
 
-  "Rock Breakers":
+  "HYDRAULIC ROCK BREAKERS":
     "/images/machinery/rock-breakers.jpg",
 
-  "Earthmoving Equipment":
+  "MASS EARTHMOVING MACHINERY":
     "/images/machinery/earthmoving-equipment.jpg",
 
-  Tippers:
+  "HEAVY HAULAGE & TIPPERS":
     "/images/machinery/tippers.jpg",
 
-  "Heavy Machinery":
+  "CRAWLER DOZERS & HEAVY ASSETS":
     "/images/machinery/heavy-machinery.jpg",
 
-  "Support Vehicles":
+  "LOGISTICS & SERVICE FLEET":
     "/images/machinery/support-vehicles.jpg",
 
-  "Site Equipment":
+  "AUXILIARY SITE UTILITIES":
     "/images/machinery/site-equipment.jpg",
 };
 
@@ -100,14 +100,14 @@ export function Machinery() {
     useState(fleetBanner);
 
   const [activeTitle,setActiveTitle] =
-    useState("Machinery Fleet");
+    useState("INDUSTRIAL EQUIPMENT PORTFOLIO");
 
   const resetFleet = () => {
 
     setActiveImage(fleetBanner);
 
     setActiveTitle(
-      "Machinery Fleet"
+      "INDUSTRIAL EQUIPMENT PORTFOLIO"
     );
 
   };
@@ -185,11 +185,11 @@ export function Machinery() {
 
         <SectionHeading
 
-          label="Our Fleet"
+          label="Fleet Capability"
 
-          title="Machinery & Equipment"
+          title="ADVANCED HEAVY MACHINERY FLEET"
 
-          description="Modern machinery ready for every project."
+          description="A high-capacity, state-of-the-art equipment ecosystem engineered for maximum operational uptime, stringent safety compliance, and rapid deployment across developments of any scale."
 
         />
 
@@ -311,7 +311,7 @@ export function Machinery() {
                 "
               >
 
-                FEATURED EQUIPMENT
+                 HEAVY ASSET BASE
 
               </p>
 

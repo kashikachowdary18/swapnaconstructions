@@ -72,7 +72,7 @@ import Image from "next/image";
 6. Work We Support
 7. Machinery & Equipment
 8. Why Choose Us
-9. Safety & Quality
+9. EHS & QUALITY ASSURANCE
 10. CTA
 11. Contact
 12. Footer

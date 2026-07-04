@@ -33,18 +33,17 @@ export function CTA() {
           transition={{ duration: 0.7 }}
         >
           <span className="mb-6 inline-block font-heading text-xs font-bold uppercase tracking-[0.4em] text-brand-yellow">
-            Let&apos;s Build Together
+           PROJECT INITIATION
           </span>
 
           <h2 className="font-heading text-3xl font-bold uppercase leading-tight tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
-            Ready To Start
+            Ready To Commence
             <br />
-            <span className="text-brand-yellow">Your Project?</span>
+            <span className="text-brand-yellow">Execution?</span>
           </h2>
 
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-white/50 md:text-lg">
-            We provide reliable excavation, earthwork and infrastructure support
-            solutions tailored to your project requirements.
+            Delivering premium bulk earthworks, heavy excavation, and civil infrastructure solutions engineered to your precise engineering specifications.
           </p>
 
           <motion.div
@@ -55,7 +54,7 @@ export function CTA() {
             transition={{ delay: 0.3 }}
           >
             <Button href="#contact" size="lg">
-              Request A Quote
+              Request A Proposal
             </Button>
           </motion.div>
         </motion.div>

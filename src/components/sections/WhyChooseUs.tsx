@@ -33,8 +33,8 @@ export function WhyChooseUs() {
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-end">
           <SectionHeading
-            label="Our Advantage"
-            title="Why Choose Us"
+            label="STRATEGIC ADVANTAGE"
+            title="WHY INDUSTRY LEADERS PARTNER WITH US"
           />
           <motion.p
             className="max-w-md text-sm leading-relaxed text-white/40 lg:pb-4 lg:text-right md:text-base"
@@ -42,8 +42,7 @@ export function WhyChooseUs() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
           >
-            Built on two decades of experience, we bring reliability and
-            professionalism to every project site.
+            Integrating a 20+ year legacy with a self-owned heavy fleet, we deliver compliant, zero-delay project execution at any scale.
           </motion.p>
         </div>
 

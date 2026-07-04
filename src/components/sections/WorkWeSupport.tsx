@@ -24,13 +24,13 @@ const iconMap: Record<string, LucideIcon> = {
 };
 
 const imageMap: Record<string, string> = {
-  "Road Construction": "/images/support/road-construction.jpg",
+  "Transportation Infrastructure": "/images/support/road-construction.jpg",
 
-  "Drainage Systems": "/images/support/drainage-systems.jpg",
+  "HYDROLOGICAL & UTILITY SYSTEMS": "/images/support/drainage-systems.jpg",
 
-  "Land Development": "/images/support/land-development.jpg",
+  "URBAN & INDUSTRIAL DEVELOPMENTS": "/images/support/land-development.jpg",
 
-  "Commercial Site Preparation":
+  "COMMERCIAL & INDUSTRIAL SITE ENABLEMENT":
     "/images/support/commercial-site-preparation.jpg",
 };
 
@@ -43,9 +43,9 @@ export function WorkWeSupport() {
       <div className="mx-auto max-w-7xl px-5 md:px-8">
 
         <SectionHeading
-          label="Project Types"
-          title="Work We Support"
-          description="Supporting diverse project requirements across excavation, earthwork and infrastructure development."
+          label="Sectors Served"
+          title="CORE PORTFOLIO EXPERTISE"
+          description="Delivering high-performance foundational and civil engineering solutions across diverse industrial, commercial, and public infrastructure developments at any scale."
         />
 
         <div className="grid gap-6 md:grid-cols-2">

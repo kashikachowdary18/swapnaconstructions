@@ -130,13 +130,11 @@ export function Navbar() {
           <div className="hidden w-[280px] justify-end lg:flex">
 
             <Button
-              href="#contact"
-              className="w-40 justify-center"
-            >
-
-              Contact Us
-
-            </Button>
+  href="#contact"
+  className="w-56 justify-center whitespace-nowrap"
+>
+  Request A Quote
+</Button>
 
           </div>
 
@@ -349,7 +347,7 @@ export function Navbar() {
                     className="mt-6"
                   >
 
-                    Contact Us
+                    Request a Quote
 
                   </Button>
 

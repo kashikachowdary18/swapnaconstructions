@@ -18,25 +18,27 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 const contactItems = [
   {
     icon: MapPinned,
-    label: "Address",
+    label: "Office location",
     value: COMPANY.address,
   },
 
   {
-    icon: Phone,
-    label: "Phone",
-    value: COMPANY.phone,
-  },
+  icon: Phone,
+  label: "Phone Inquiries",
+  value: COMPANY.phone,
+  href: "tel:+918790344074",
+},
 
   {
-    icon: Mail,
-    label: "Email",
-    value: COMPANY.email,
-  },
+  icon: Mail,
+  label: "Business Email",
+  value: COMPANY.email,
+  href: `mailto:${COMPANY.email}`,
+},
 
   {
     icon: AtSign,
-    label: "Instagram",
+    label: "social media",
     value: COMPANY.instagram,
     href: COMPANY.instagramUrl,
   },
@@ -88,11 +90,11 @@ export function Contact() {
 
         <SectionHeading
 
-          label="Get In Touch"
+          label="PARTNERSHIP INQUIRIE"
 
-          title="Contact Us"
+          title="PARTNER WITH US"
 
-          description="Reach out to discuss your excavation, earthwork and infrastructure support requirements."
+          description="Submit your project briefs or tender requirements to connect directly with our commercial engineering division."
 
           align="center"
 
@@ -418,28 +420,17 @@ export function Contact() {
                   >
 
                     {item.href ? (
-
-                      <a
-
-                        href={item.href}
-
-                        target="_blank"
-
-                        rel="noopener noreferrer"
-
-                        className="block"
-                      >
-
-                        {content}
-
-                      </a>
-
-                    ) : (
-
-                      content
-
-                    )}
-
+  <a
+    href={item.href}
+    target={item.href.startsWith("mailto:") ? undefined : "_blank"}
+    rel={item.href.startsWith("mailto:") ? undefined : "noopener noreferrer"}
+    className="block transition-opacity hover:opacity-90"
+  >
+    {content}
+  </a>
+) : (
+  content
+)}
                   </motion.div>
 
                 );

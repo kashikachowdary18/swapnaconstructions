@@ -50,7 +50,7 @@ export function About() {
 
             <SectionHeading
               label="About Us"
-              title="Building Strong Foundations Through Experience"
+              title="STRATEGIC INFRASTRUCTURE & EARTHWORK SOLUTIONS FOR INDIA’S LEADING ENTERPRISES."
             />
 
           </div>
@@ -70,14 +70,13 @@ export function About() {
 
             <p>
 
-              Swapna Construction is a trusted excavation and infrastructure support contractor with over 20 years of experience delivering reliable earthwork, excavation, land development, road works and drainage solutions.
+              With over two decades of operational excellence, Swapna Construction is a premier partner for large-scale infrastructure and heavy civil engineering projects. We deliver turnkey earthworks, complex site development, roadway infrastructure, and advanced drainage solutions for high-value commercial, industrial, and civil mandates.
 
             </p>
 
             <p>
 
-              We specialize in supporting residential, commercial and infrastructure projects through efficient execution, skilled manpower and modern machinery.
-
+              We thoroughly understand the rigorous compliance and risk-mitigation demands of enterprise-level execution. By deploying an advanced heavy machinery fleet and a highly specialized workforce, we ensure stringent safety standards, absolute precision, and seamless project delivery from mobilization to handover.
             </p>
 
           </motion.div>
@@ -160,8 +159,7 @@ export function About() {
             </div>
 
             <p className="leading-8 text-white/60">
-
-              To deliver safe, efficient and reliable excavation and infrastructure support services that help our clients build with confidence while maintaining high standards of quality and timely execution.
+To deliver world-class earthworks and civil infrastructure solutions through uncompromising EHS (Environment, Health & Safety) compliance, advanced technology, and operational precision-mitigating project risk while ensuring timely and reliable project delivery.
 
             </p>
 
@@ -231,7 +229,7 @@ export function About() {
 
             <p className="leading-8 text-white/60">
 
-              To become the most trusted excavation and infrastructure support partner known for professionalism, dependable execution, modern equipment and commitment to every project we undertake.
+              To benchmark excellence in heavy civil infrastructure by continuously pioneering sustainable engineering practices, expanding our advanced asset base, and serving as the premier tier-1 foundational partner for India’s landmark corporate and industrial development
 
             </p>
 

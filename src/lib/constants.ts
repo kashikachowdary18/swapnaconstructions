@@ -1,9 +1,9 @@
 export const COMPANY = {
   name: "SWAPNA CONSTRUCTION",
   shortName: "Swapna Construction",
-  tagline: "Trusted Partner For Excavation & Infrastructure Solutions",
+  tagline: "Your Trusted Partner for Heavy Civil & Infrastructure Solutions",
   experience: "20+ Years",
-  address: "Plot No. 980, Kondapur, Hyderabad",
+  address: "Kondapur, Hyderabad, Telangana",
   phone: "+91 8790344074, +91 9121412092",
   email: "swapnaconstruction.2011@gmail.com",
   instagram: "@swapnaconstruction_",
@@ -11,61 +11,75 @@ export const COMPANY = {
 } as const;
 
 export const NAV_LINKS = [
+  { label: "Home", href: "#hero" },
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
+  { label: "Projects", href: "#work" },
   { label: "Machinery", href: "#machinery" },
-  { label: "Contact", href: "#contact" },
 ] as const;
 
 export const HERO_SERVICES = [
-  "Rock Excavation",
-  "Earthwork",
-  "Basement Excavation",
-  "Road Works",
-  "Drainage Works",
-  "Infrastructure Support",
+  "Heavy Excavation",
+  "Bulk Earthworks",
+  "Deep Basements",
+  "Site Development",
+  "Roadway Infrastructure",
+  "Civil Utilities & Drainage",
+  "Heavy Infrastructure Support",
 ] as const;
 
 export const STATS = [
-  { value: "20+", label: "Years Experience" },
-  { value: "100%", label: "Commitment" },
-  { value: "24/7", label: "Project Support" },
-  { value: "Safe", label: "Execution" },
+  {
+    value: "20+",
+    label: "Years of Excellence",
+  },
+  {
+    value: "Modern",
+    label: "Fleet & Equipment",
+  },
+  {
+    value: "100%",
+    label: "Safety Commitment",
+  },
+  {
+    value: "On-Time",
+    label: "Project Delivery",
+  },
 ] as const;
 
 export const SERVICES = [
-  { number: "01", title: "Rock Excavation", icon: "Hammer" },
-  { number: "02", title: "Hard Rock Cutting", icon: "Pickaxe" },
-  { number: "03", title: "Basement Excavation", icon: "Building2" },
-  { number: "04", title: "Earthwork", icon: "Mountain" },
-  { number: "05", title: "Land Leveling", icon: "Layers" },
-  { number: "06", title: "Road Works", icon: "Route" },
-  { number: "07", title: "Drainage Works", icon: "Droplets" },
-  { number: "08", title: "Site Preparation", icon: "HardHat" },
-  { number: "09", title: "Infrastructure Support", icon: "Wrench" },
+  { number: "01", title: "Heavy Rock Excavation", icon: "Hammer" },
+  { number: "02", title: "Advanced Strata Cutting", icon: "Pickaxe" },
+  { number: "03", title: "Deep Basement Excavation", icon: "Building2" },
+  { number: "04", title: "Bulk Earthworks", icon: "Mountain" },
+  { number: "05", title: "PRECISION SITE GRADING", icon: "Layers" },
+  { number: "06", title: "ROADWAY INFRASTRUCTURE", icon: "Route" },
+  { number: "07", title: "CIVIL UTILITIES & DRAINAGE", icon: "Droplets" },
+  { number: "08", title: "COMPREHENSIVE Site Preparation", icon: "HardHat" },
+  { number: "09", title: "Heavy Infrastructure Support", icon: "Wrench" },
 ] as const;
 
 export const WORK_SUPPORT = [
   {
-    title: "Road Construction",
+    title: "Transportation Infrastructure",
     description:
       "Comprehensive earthwork and excavation support for road construction projects of all scales.",
     icon: "Route",
   },
   {
-    title: "Drainage Systems",
+    title: "HYDROLOGICAL & UTILITY SYSTEMS",
     description:
       "Expert drainage excavation and infrastructure support for efficient water management systems.",
     icon: "Droplets",
   },
   {
-    title: "Land Development",
+    title: "URBAN & INDUSTRIAL DEVELOPMENTS",
     description:
       "Complete land leveling, grading and site preparation for residential and commercial development.",
     icon: "Layers",
   },
   {
-    title: "Commercial Site Preparation",
+    title: "COMMERCIAL & INDUSTRIAL SITE ENABLEMENT",
     description:
       "Professional site preparation and earthwork for commercial and industrial project foundations.",
     icon: "Building2",
@@ -73,59 +87,59 @@ export const WORK_SUPPORT = [
 ] as const;
 
 export const MACHINERY = [
-  { name: "Excavators", icon: "Truck" },
-  { name: "JCB Equipment", icon: "Construction" },
-  { name: "Rock Breakers", icon: "Hammer" },
-  { name: "Earthmoving Equipment", icon: "Mountain" },
-  { name: "Tippers", icon: "Truck" },
-  { name: "Heavy Machinery", icon: "Cog" },
-  { name: "Support Vehicles", icon: "Car" },
-  { name: "Site Equipment", icon: "Wrench" },
+  { name: "HYDRAULIC EXCAVATORS", icon: "Truck" },
+  { name: "BACKHOE LOADERS", icon: "Construction" },
+  { name: "HYDRAULIC ROCK BREAKERS", icon: "Hammer" },
+  { name: "MASS EARTHMOVING MACHINERY", icon: "Mountain" },
+  { name: "HEAVY HAULAGE & TIPPERS", icon: "Truck" },
+  { name: "CRAWLER DOZERS & HEAVY ASSETS", icon: "Cog" },
+  { name: "LOGISTICS & SERVICE FLEET", icon: "Car" },
+  { name: "AUXILIARY SITE UTILITIES", icon: "Wrench" },
 ] as const;
 
 export const WHY_CHOOSE_US = [
   {
-    title: "20+ Years Experience",
+    title: "20+ Years Legacy",
     description:
-      "Two decades of hands-on expertise in excavation and infrastructure support across diverse projects.",
+      "Two decades of proven technical expertise delivering critical heavy civil excavation and infrastructure solutions across diverse sectors.",
     icon: "Award",
   },
   {
-    title: "Timely Delivery",
+    title: "ZERO-DELAY EXECUTION",
     description:
-      "Committed to meeting project timelines with efficient planning and disciplined execution.",
+      "Driven by rigorous project management and strategic planning to ensure absolute milestone compliance for projects of any scale.",
     icon: "Clock",
   },
   {
-    title: "Modern Machinery",
+    title: "SELF-OWNED HEAVY FLEET",
     description:
-      "Well-maintained fleet of excavators, JCBs, rock breakers and earthmoving equipment.",
+      "A high-capacity, tier-1 asset base of hydraulic excavators, loaders, and specialized civil machinery engineered for maximum uptime.",
     icon: "Truck",
   },
   {
-    title: "Skilled Workforce",
+    title: "SPECIALIZED WORKFORCE",
     description:
-      "Experienced operators and site personnel trained for safe, precise project delivery.",
+      "Certified operators and technical personnel meticulously trained for safe, high-precision civil engineering delivery.",
     icon: "Users",
   },
   {
-    title: "Safety First",
+    title: "STRINGENT EHS COMPLIANCE",
     description:
-      "Rigorous safety protocols and proper equipment handling on every job site.",
+      "Rigorous environmental, health, and safety protocols deployed across every site footprint to completely mitigate operational risks.",
     icon: "Shield",
   },
   {
-    title: "Reliable Execution",
+    title: "OPERATIONAL EXCELLENCE",
     description:
-      "Consistent, dependable performance that contractors and developers can count on.",
+      "Consistent, benchmarked project delivery that corporate conglomerates and private developers trust to secure their civil investments.",
     icon: "CheckCircle",
   },
 ] as const;
 
 export const SAFETY_QUALITY = [
-  "Safe Work Execution",
-  "Skilled Workforce Deployment",
-  "Proper Equipment Handling",
-  "Timely Completion",
+  "ZERO-INCIDENT SITE EXECUTION",
+  "CERTIFIED PERSONNEL DEPLOYMENT",
+  "OPTIMIZED ASSET MANAGEMENT",
+  "STRATEGIC MILESTONE COMPLIANCE",
   "High Quality Standards",
 ] as const;

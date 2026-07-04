@@ -47,9 +47,9 @@ export function SafetyQuality() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              Safety &amp;
+             EHS & QUALITY ASSURANCE
               <br />
-              Quality
+              
             </motion.h2>
 
             <motion.p
@@ -59,9 +59,7 @@ export function SafetyQuality() {
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
             >
-              Every project is executed with rigorous attention to safety
-              protocols and quality standards — protecting our workforce,
-              equipment and your investment.
+              Every project is executed under rigid adherence to statutory safety frameworks and strict engineering benchmarks—safeguarding specialized technical personnel, heavy asset bases, and capital investments at any scale.
             </motion.p>
           </div>
 

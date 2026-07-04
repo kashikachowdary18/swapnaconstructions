@@ -91,14 +91,16 @@ export function Hero() {
           <motion.h1
 
             className="
-            font-heading
-            text-6xl
-            font-bold
-            uppercase
-            leading-none
-            text-white
-            md:text-8xl
-            "
+font-heading
+text-5xl
+sm:text-6xl
+md:text-7xl
+lg:text-8xl
+font-bold
+uppercase
+leading-none
+text-white
+"
 
             initial={{
               opacity: 0,
@@ -123,14 +125,16 @@ export function Hero() {
           <motion.h1
 
             className="
-            font-heading
-            text-6xl
-            font-bold
-            uppercase
-            leading-none
-            text-brand-yellow
-            md:text-8xl
-            "
+font-heading
+text-5xl
+sm:text-6xl
+md:text-7xl
+lg:text-8xl
+font-bold
+uppercase
+leading-none
+text-brand-yellow
+"
 
             initial={{
               opacity: 0,
@@ -234,7 +238,7 @@ export function Hero() {
               size="lg"
             >
 
-              Contact Us
+              Partner with us
 
             </Button>
 

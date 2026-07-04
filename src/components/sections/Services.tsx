@@ -148,11 +148,11 @@ export function Services() {
 
         <SectionHeading
 
-          label="What We Do"
+          label="CORE CAPABILITIES"
 
-          title="Our Services"
+          title="ENGINEERING & CIVIL SOLUTIONS"
 
-          description="Comprehensive excavation and infrastructure support solutions for projects of every scale."
+          description="High-precision earthworks, heavy civil excavation, and site infrastructure solutions engineered to meet rigorous enterprise standards and support private developments at any scale."
 
         />
 
