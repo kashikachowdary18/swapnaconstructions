@@ -13,14 +13,19 @@ export function Navbar() {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 40);
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 40);
+    };
 
     window.addEventListener("scroll", handleScroll, {
       passive: true,
     });
 
     return () =>
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener(
+        "scroll",
+        handleScroll
+      );
   }, []);
 
   useEffect(() => {
@@ -39,42 +44,43 @@ export function Navbar() {
   return (
     <>
       <motion.header
-        initial={{ y: -120 }}
+        initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{
           duration: 0.6,
           ease: [0.22, 1, 0.36, 1],
         }}
-        className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
+        className={`fixed inset-x-0 top-0 z-50 border-b transition-all duration-500 ${
           isScrolled
-            ? "bg-black/45 backdrop-blur-3xl border-b border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.35)] py-3"
-            : "bg-transparent py-5"
+            ? "border-white/10 bg-black/45 backdrop-blur-3xl shadow-[0_20px_60px_rgba(0,0,0,0.35)]"
+            : "border-white/5 bg-gradient-to-b from-black/30 to-transparent backdrop-blur-sm"
         }`}
       >
-        <nav className="mx-auto flex h-24 max-w-7xl items-center justify-between px-8">
+        <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 xl:px-10">
 
-          {/* Logo */}
+          {/* ================= Logo ================= */}
 
-          <div className="w-[280px] flex-shrink-0">
+          <div className="w-[220px] xl:w-[250px] flex-shrink-0">
 
             <a
               href="#hero"
-              className="flex items-center transition duration-300 hover:scale-105"
+              className="group flex items-center transition-transform duration-300 hover:scale-[1.03]"
             >
 
               <Image
                 src="/images/logo/logo.png"
                 alt="Swapna Construction"
-                width={320}
+                width={330}
                 height={120}
                 priority
                 className="
-                h-20
-                md:h-24
+                h-14
+                md:h-16
+                xl:h-[72px]
                 w-auto
                 object-contain
-                brightness-110
-                contrast-110
+                transition-all
+                duration-300
                 "
               />
 
@@ -82,28 +88,23 @@ export function Navbar() {
 
           </div>
 
-          {/* Desktop Navigation */}
-
-          <ul className="hidden flex-1 items-center justify-center gap-16 lg:flex">
-
+          {/* ================= Desktop Navigation ================= */}
+                    <ul className="hidden flex-1 items-center justify-center gap-10 xl:gap-14 lg:flex">
             {NAV_LINKS.map((link) => (
-
               <li key={link.href}>
-
                 <a
                   href={link.href}
                   className="
                   relative
                   font-heading
-                  text-[13px]
+                  text-[12px]
                   font-medium
                   uppercase
-                  tracking-[0.35em]
+                  tracking-[0.28em]
                   text-white/85
                   transition-all
                   duration-300
                   hover:text-brand-yellow
-                  hover:-translate-y-0.5
                   after:absolute
                   after:left-0
                   after:-bottom-2
@@ -114,37 +115,28 @@ export function Navbar() {
                   hover:after:w-full
                   "
                 >
-
                   {link.label}
-
                 </a>
-
               </li>
-
             ))}
-
           </ul>
 
-          {/* Contact Button */}
+          {/* ================= Desktop CTA ================= */}
 
-          <div className="hidden w-[280px] justify-end lg:flex">
-
+          <div className="hidden w-[220px] xl:w-[250px] justify-end lg:flex">
             <Button
-  href="#contact"
-  className="w-56 justify-center whitespace-nowrap"
->
-  Request A Quote
-</Button>
-
+              href="#contact"
+              className="min-w-[170px] px-6 py-3 text-[11px] tracking-[0.22em]"
+            >
+              Request A Quote
+            </Button>
           </div>
 
-          {/* Mobile Button */}
+          {/* ================= Mobile Menu Button ================= */}
 
           <button
             type="button"
-            onClick={() =>
-              setIsMobileOpen(!isMobileOpen)
-            }
+            onClick={() => setIsMobileOpen(!isMobileOpen)}
             aria-expanded={isMobileOpen}
             aria-label="Toggle Menu"
             className="
@@ -159,60 +151,33 @@ export function Navbar() {
             border
             border-white/10
             bg-white/5
+            backdrop-blur-xl
             lg:hidden
             "
           >
-
             <AnimatePresence mode="wait">
-
               {isMobileOpen ? (
-
                 <motion.div
                   key="close"
-                  initial={{
-                    opacity: 0,
-                    rotate: -90,
-                  }}
-                  animate={{
-                    opacity: 1,
-                    rotate: 0,
-                  }}
-                  exit={{
-                    opacity: 0,
-                    rotate: 90,
-                  }}
+                  initial={{ opacity: 0, rotate: -90 }}
+                  animate={{ opacity: 1, rotate: 0 }}
+                  exit={{ opacity: 0, rotate: 90 }}
+                  transition={{ duration: 0.2 }}
                 >
-
                   <X className="h-6 w-6 text-brand-yellow" />
-
                 </motion.div>
-
               ) : (
-
                 <motion.div
                   key="menu"
-                  initial={{
-                    opacity: 0,
-                    rotate: 90,
-                  }}
-                  animate={{
-                    opacity: 1,
-                    rotate: 0,
-                  }}
-                  exit={{
-                    opacity: 0,
-                    rotate: -90,
-                  }}
+                  initial={{ opacity: 0, rotate: 90 }}
+                  animate={{ opacity: 1, rotate: 0 }}
+                  exit={{ opacity: 0, rotate: -90 }}
+                  transition={{ duration: 0.2 }}
                 >
-
                   <Menu className="h-6 w-6 text-white" />
-
                 </motion.div>
-
               )}
-
             </AnimatePresence>
-
           </button>
 
         </nav>
@@ -242,7 +207,6 @@ export function Navbar() {
               duration: 0.3,
             }}
           >
-
             {/* Mobile Logo */}
 
             <motion.div
@@ -259,7 +223,6 @@ export function Navbar() {
               }}
               className="mb-14"
             >
-
               <Image
                 src="/images/logo/logo.png"
                 alt="Swapna Construction"
@@ -267,24 +230,18 @@ export function Navbar() {
                 height={140}
                 priority
                 className="
-                h-24
+                h-20
                 w-auto
                 object-contain
-                brightness-110
-                contrast-110
                 "
               />
-
             </motion.div>
 
-            {/* Navigation */}
+            {/* Mobile Navigation */}
 
             <nav>
-
               <ul className="flex flex-col items-center gap-8">
-
                 {NAV_LINKS.map((link, index) => (
-
                   <motion.li
                     key={link.href}
                     initial={{
@@ -302,7 +259,6 @@ export function Navbar() {
                       delay: index * 0.08,
                     }}
                   >
-
                     <a
                       href={link.href}
                       onClick={handleNavClick}
@@ -310,6 +266,7 @@ export function Navbar() {
                       relative
                       font-heading
                       text-2xl
+                      font-medium
                       uppercase
                       tracking-[0.25em]
                       text-white
@@ -318,13 +275,9 @@ export function Navbar() {
                       hover:text-brand-yellow
                       "
                     >
-
                       {link.label}
-
                     </a>
-
                   </motion.li>
-
                 ))}
 
                 <motion.li
@@ -340,21 +293,15 @@ export function Navbar() {
                     delay: NAV_LINKS.length * 0.08,
                   }}
                 >
-
                   <Button
                     href="#contact"
                     onClick={handleNavClick}
-                    className="mt-6"
+                    className="mt-6 min-w-[180px]"
                   >
-
-                    Request a Quote
-
+                    Request A Quote
                   </Button>
-
                 </motion.li>
-
               </ul>
-
             </nav>
 
             {/* Bottom Tagline */}
@@ -381,14 +328,11 @@ export function Navbar() {
                 delay: 0.5,
               }}
             >
-
               {COMPANY.tagline}
-
             </motion.p>
-
           </motion.div>
         )}
       </AnimatePresence>
-          </>
+    </>
   );
 }
