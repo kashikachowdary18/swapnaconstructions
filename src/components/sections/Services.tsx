@@ -5,11 +5,11 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 import {
-  Hammer,
-  Pickaxe,
-  Building2,
   Mountain,
-  Layers,
+  Construction,
+  Building2,
+  Truck,
+  Layers3,
   Route,
   Droplets,
   HardHat,
@@ -28,17 +28,19 @@ import {
   fadeInUp,
 } from "@/lib/animations";
 
-const iconMap: Record<string, LucideIcon> = {
-  Hammer,
-  Pickaxe,
-  Building2,
+
+  const iconMap: Record<string, LucideIcon> = {
   Mountain,
-  Layers,
+  Construction,
+  Building2,
+  Truck,
+  Layers3,
   Route,
   Droplets,
   HardHat,
   Wrench,
 };
+
 
 const imageMap: Record<string, string> = {
   "01": "/images/services/rock-excavation.jpg",

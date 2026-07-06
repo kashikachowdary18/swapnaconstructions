@@ -48,40 +48,75 @@ export const STATS = [
 ] as const;
 
 export const SERVICES = [
-  { number: "01", title: "Heavy Rock Excavation", icon: "Hammer" },
-  { number: "02", title: "Advanced Strata Cutting", icon: "Pickaxe" },
-  { number: "03", title: "Deep Basement Excavation", icon: "Building2" },
-  { number: "04", title: "Bulk Earthworks", icon: "Mountain" },
-  { number: "05", title: "PRECISION SITE GRADING", icon: "Layers" },
-  { number: "06", title: "ROADWAY INFRASTRUCTURE", icon: "Route" },
-  { number: "07", title: "CIVIL UTILITIES & DRAINAGE", icon: "Droplets" },
-  { number: "08", title: "COMPREHENSIVE Site Preparation", icon: "HardHat" },
-  { number: "09", title: "Heavy Infrastructure Support", icon: "Wrench" },
+  {
+    number: "01",
+    title: "Heavy Rock Excavation",
+    icon: "Mountain",
+  },
+  {
+    number: "02",
+    title: "Advanced Strata Cutting",
+    icon: "Construction",
+  },
+  {
+    number: "03",
+    title: "Deep Basement Excavation",
+    icon: "Building2",
+  },
+  {
+    number: "04",
+    title: "Bulk Earthworks",
+    icon: "Truck",
+  },
+  {
+    number: "05",
+    title: "Precision Site Grading",
+    icon: "Layers3",
+  },
+  {
+    number: "06",
+    title: "Roadway Infrastructure",
+    icon: "Route",
+  },
+  {
+    number: "07",
+    title: "Civil Utilities & Drainage",
+    icon: "Droplets",
+  },
+  {
+    number: "08",
+    title: "Comprehensive Site Preparation",
+    icon: "HardHat",
+  },
+  {
+    number: "09",
+    title: "Heavy Infrastructure Support",
+    icon: "Wrench",
+  },
 ] as const;
-
 export const WORK_SUPPORT = [
   {
     title: "Transportation Infrastructure",
     description:
-      "Comprehensive earthwork and excavation support for road construction projects of all scales.",
+      "Precision earthworks and heavy excavation engineered for large-scale highway and transit networks",
     icon: "Route",
   },
   {
     title: "HYDROLOGICAL & UTILITY SYSTEMS",
     description:
-      "Expert drainage excavation and infrastructure support for efficient water management systems.",
+      "High-capacity utility corridor preparation and deep-trench excavation.",
     icon: "Droplets",
   },
   {
     title: "URBAN & INDUSTRIAL DEVELOPMENTS",
     description:
-      "Complete land leveling, grading and site preparation for residential and commercial development.",
+      "Precision site grading, structural leveling, and bulk earthworks for large-scale projects.",
     icon: "Layers",
   },
   {
     title: "COMMERCIAL & INDUSTRIAL SITE ENABLEMENT",
     description:
-      "Professional site preparation and earthwork for commercial and industrial project foundations.",
+      "Precision site preparation for large-scale commercial and industrial developments.",
     icon: "Building2",
   },
 ] as const;
