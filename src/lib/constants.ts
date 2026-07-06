@@ -34,8 +34,8 @@ export const STATS = [
     label: "Years of Excellence",
   },
   {
-    value: "Modern",
-    label: "Fleet & Equipment",
+    value: "Modern Fleet",
+    label: "& Heavy Equipment",
   },
   {
     value: "100%",
